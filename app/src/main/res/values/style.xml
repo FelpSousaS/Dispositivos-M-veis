@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_abertura">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">235dp</item>
+        <item name="android:background">@drawable/container_components</item>
+        <item name="android:layout_margin">80dp</item>
+    </style>
+    <style name="Edit_Text">
+        <!--largura-->
+        <item name="android:layout_width">match_parent</item>
+        <!--altura-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:layout_marginRight">90dp</item>
+        <item name="android:layout_marginLeft">90dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">90dp</item>
+        <item name="android:layout_marginRight">90dp</item>
+        <item name="android:padding">18dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+    <style name="text_cadastro">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+</resources>

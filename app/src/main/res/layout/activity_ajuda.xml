@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ajuda">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="409dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="@id/constlayout"
+            app:layout_constraintEnd_toEndOf="@id/constlayout"
+            app:layout_constraintStart_toStartOf="@id/constlayout"
+            app:layout_constraintTop_toBottomOf="@id/text" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="210dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="56dp"
+            android:text="Sites Relacionados"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@+id/listview"
+            app:layout_constraintEnd_toEndOf="@id/constlayout"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="@id/constlayout"
+            app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/ajuda_drop"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/text"
+            app:layout_constraintEnd_toEndOf="@id/constlayout"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@id/constlayout"
+            app:layout_constraintTop_toTopOf="@id/constlayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

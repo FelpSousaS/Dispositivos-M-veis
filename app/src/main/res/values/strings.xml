@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AppComponents</string>
+    <string name="text_abertura">MusicBR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="configs_array">
+        <item >Idioma</item>
+        <item >Tema</item>
+        <item >Hello,World!</item>
+    </string-array>
+
+    <string-array name="ajuda_drop">
+        <item>Como podemos te ajudar?</item>
+        <item >Como criar playlist</item>
+        <item >Adicionar músicas em uma playlist</item>
+        <item >Ouvir estações de rádio</item>
+    </string-array>
+</resources>

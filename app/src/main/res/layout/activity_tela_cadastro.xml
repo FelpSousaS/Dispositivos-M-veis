@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_cadastre_se"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif-monospace"
+                android:text="Cadastro"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_cad"
+                style="@style/ContainerComponents"
+                android:layout_width="350dp"
+                android:layout_height="550dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_cadastre_se" />
+
+            <EditText
+                android:id="@+id/nome_cad"
+                style="@style/Edit_Text"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toTopOf="@id/view_cad"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                android:layout_marginTop="30dp"
+                android:hint="Nome"
+                android:drawableRight="@drawable/ic_baseline_person_24"
+                android:textColorHint="@color/verde1"
+                android:textColor="@color/verde1"
+                />
+
+            <EditText
+                android:id="@+id/email_cad"
+                style="@style/Edit_Text"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:drawableRight="@drawable/ic_baseline_email_24"
+                android:hint="Email"
+                android:textColorHint="@color/verde1"
+                android:textColor="@color/verde1"
+                app:layout_constraintTop_toBottomOf="@id/nome_cad"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:id="@+id/novasenha_cad"
+                style="@style/Edit_Text"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:hint="Nova senha"
+                app:layout_constraintTop_toBottomOf="@id/email_cad"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/verde1"
+                android:textColorHint="@color/verde1"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/ic_baseline_lock_24"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/data_cad"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Data de nascimento"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                app:layout_constraintHorizontal_bias="0.165"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintTop_toBottomOf="@+id/novasenha_cad" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectData_cad"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Selecione a data"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintTop_toBottomOf="@+id/data_cad"
+                android:layout_marginTop="10dp"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/verde1"/>
+
+            <TextView
+                android:id="@+id/sex_cad"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:text="Sexo"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintTop_toBottomOf="@id/selectData_cad" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="271dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="32dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintTop_toBottomOf="@id/sex_cad">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:text="Masculino"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:text="Feminino"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_cad"
+                style="@style/button"
+                android:layout_width="200dp"
+                app:layout_constraintTop_toBottomOf="@id/radiogroup"
+                app:layout_constraintStart_toStartOf="@id/view_cad"
+                app:layout_constraintEnd_toEndOf="@id/view_cad"
+                android:text="Cadastrar"
+                android:layout_marginTop="15dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+
