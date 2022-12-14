@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Edit_atividade">
+
+    <include layout="@layout/toolbar_edit_atv"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_edit_atv"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_alignParentEnd="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_tipo_de_atividade"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Tipo de Atividade"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup_tipo_da_atividade"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_tipo_de_atividade">
+
+                <RadioButton
+                    android:id="@+id/radiobutton_ensino"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Ensino"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/radiobutton_pesquisa"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Pesquisa"
+                    android:textColor="@color/black"/>
+                <RadioButton
+                    android:id="@+id/radiobutton_extensao"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Extensão"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/txt_nome_atividade"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:text="Nome da Atividade"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radiogroup_tipo_da_atividade" />
+
+            <EditText
+                android:id="@+id/edit_nome_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Nome da Atividade"
+                android:maxLength="50"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_nome_atividade" />
+
+            <TextView
+                android:id="@+id/txt_descricao_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Descrição da Atividade"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_nome_atividade" />
+
+            <EditText
+                android:id="@+id/edit_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Descrição"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_descricao_atividade" />
+
+            <TextView
+                android:id="@+id/txt_objetivo_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Objetivo"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_descricao" />
+
+            <EditText
+                android:id="@+id/edit_objetivo"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Objetivo"
+                android:inputType="textMultiLine"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_objetivo_atividade"/>
+
+            <TextView
+                android:id="@+id/txt_metodologia_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Como a atividade será realizada?(Metodologia)"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_objetivo"/>
+
+            <EditText
+                android:id="@+id/edit_metodologia"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Metodologia"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_metodologia_atividade"/>
+
+            <TextView
+                android:id="@+id/txt_resultados_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:text="Quais os resultados que se espera da atividade? Resultados / produtos esperados com a atividade: melhorias para o Curso, para a Educação, para a sociedade, meios para a socialização dos resultados, publicações, etc:"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_metodologia" />
+
+            <EditText
+                android:id="@+id/edit_resultados"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:textSize="16dp"
+                android:hint="Resultados"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_resultados_atividade" />
+
+            <TextView
+                android:id="@+id/txt_avaliacao_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:text="Qual será a metodologia de avaliação da atividade pelo grupo?"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_resultados"/>
+
+            <EditText
+                android:id="@+id/edit_avaliacao"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:inputType="textMultiLine"
+                android:hint="Avaliação"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_avaliacao_atividade" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_upd"
+                style="@style/button"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="addAtividade"
+                android:text="Atualizar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_avaliacao" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

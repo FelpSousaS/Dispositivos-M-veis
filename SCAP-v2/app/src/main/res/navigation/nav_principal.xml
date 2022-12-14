@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_principal"
+    app:startDestination="@id/bottom_menu_inicio">
+
+    <fragment
+        android:id="@+id/bottom_menu_inicio"
+        android:name="br.ufc.quixada.scap.fragments.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" />
+    <fragment
+        android:id="@+id/bottom_menu_atividades"
+        android:name="br.ufc.quixada.scap.fragments.AtividadesFragment"
+        android:label="fragment_atividades"
+        tools:layout="@layout/fragment_atividades" />
+    <fragment
+        android:id="@+id/bottom_menu_notificacoes"
+        android:name="br.ufc.quixada.scap.fragments.AdicionarFragment"
+        android:label="fragment_notificacoes"
+        tools:layout="@layout/fragment_adicionar" />
+    <fragment
+        android:id="@+id/bottom_menu_pet"
+        android:name="br.ufc.quixada.scap.fragments.Pet_siFragment"
+        android:label="fragment_pet_si"
+        tools:layout="@layout/fragment_pet_si" />
+</navigation>

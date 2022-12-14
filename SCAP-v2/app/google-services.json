@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145634267268",
+    "project_id": "scap-49769",
+    "storage_bucket": "scap-49769.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145634267268:android:8a3be50e15fe248446b2d1",
+        "android_client_info": {
+          "package_name": "br.ufc.quixada.scap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145634267268-hkgfpjcoqe1r7tu3dmjt0khul8hcjffn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ufc.quixada.scap",
+            "certificate_hash": "3742a4c7dc6c6c33b4035cfeaa4d58531bdd4d76"
+          }
+        },
+        {
+          "client_id": "145634267268-70e995u6f21qbs2crue4rf1j4u78d9vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOT-28GCELsTDP6qHhnLmMgKE8o8rsshk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145634267268-70e995u6f21qbs2crue4rf1j4u78d9vq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

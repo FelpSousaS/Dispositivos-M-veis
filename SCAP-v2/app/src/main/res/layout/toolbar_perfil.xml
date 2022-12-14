@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_atv_proposta"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    app:menu="@menu/menu_perfil"
+    app:titleTextColor="@color/white">
+
+
+    <ImageView
+        android:id="@+id/ic_voltar_perfil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginRight="210dp"
+        android:text="PERFIL"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <ImageView
+        android:id="@+id/ic_sair"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="0dp"
+        android:iconTint="@color/white"
+        android:src="@drawable/ic_baseline_logout_24" />
+
+
+</androidx.appcompat.widget.Toolbar>

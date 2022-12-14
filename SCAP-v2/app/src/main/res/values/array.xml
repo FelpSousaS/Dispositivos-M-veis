@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nome_array">
+        <item >@string/nome_tutor</item>
+        <item >@string/b1</item>
+        <item >@string/b2</item>
+        <item >@string/b3</item>
+        <item >@string/b4</item>
+        <item >@string/b5</item>
+        <item >@string/b6</item>
+        <item >@string/b7</item>
+        <item >@string/b8</item>
+        <item >@string/b9</item>
+        <item >@string/b10</item>
+    </string-array>
+    <string-array name="email_array">
+        <item >@string/email_tutor</item>
+        <item >@string/email_b1</item>
+        <item >@string/email_b2</item>
+        <item >@string/email_b3</item>
+        <item >@string/email_b4</item>
+        <item >@string/email_b5</item>
+        <item >@string/email_b6</item>
+        <item >@string/email_b7</item>
+        <item >@string/email_b8</item>
+        <item >@string/email_b9</item>
+        <item >@string/email_b10</item>
+    </string-array>
+
+    <string-array name="autor_array">
+        <item >@string/nome_tutor</item>
+        <item >@string/b1</item>
+    </string-array>
+    <string-array name="atividade_array">
+        <item >@string/atividade</item>
+        <item >@string/atividade</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">SCAP</string>
+    <string name="petsi">PET-SI</string>
+    <string name="pet">PET</string>
+    <string name="bottom_inicio">Início</string>
+    <string name="bottom_atividades">Minhas Atv</string>
+    <string name="bottom_adicionar">Adicionar</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="text_login_cadastro">Cadastre-se aqui!</string>
+    <string name="title_cadastre_se">Cadastro</string>
+    <string name="button_cadastrar">Cadastrar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tutor">Tutor</string>
+    <string name="bolsista">Bolsista</string>
+    <string name="atividade">Atividade</string>
+    <string name="nome_tutor">Wladimir Tavares</string>
+    <string name="b1">Vanessa Miranda</string>
+    <string name="b2">Ana Karine</string>
+    <string name="b3">Letícia Pinheiro</string>
+    <string name="b4">Dayana Priscilla</string>
+    <string name="b5">Michel Silva</string>
+    <string name="b6">Getúlio Macedo</string>
+    <string name="b7">Victor Soares</string>
+    <string name="b8">Marcus Túlio</string>
+    <string name="b9">Lucas Xavier</string>
+    <string name="b10">Abner Enoque</string>
+
+    <string name="email_tutor">wladimir_tavares@ufc.br</string>
+    <string name="email_b1">vanessa_miranda@alu.ufc.br</string>
+    <string name="email_b2">ana_karine@alu.ufc.br</string>
+    <string name="email_b3">let_pinheiro@alu.ufc.br</string>
+    <string name="email_b4">daypnfsi@alu.ufc.br</string>
+    <string name="email_b5">michel_silva@alu.ufc.br</string>
+    <string name="email_b6">getulio_macedo@alu.ufc.br</string>
+    <string name="email_b7">victorsoares@alu.ufc.br</string>
+    <string name="email_b8">marcus_tulio@alu.ufc.br</string>
+    <string name="email_b9">lucas_xavier@alu.ufc.br</string>
+    <string name="email_b10">abner_enoque@alu.ufc.br</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_menu_inicio"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/bottom_inicio"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_atividades"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_pending_actions_24"
+        android:title="@string/bottom_atividades"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_adicionar"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="@string/bottom_adicionar"
+
+        />
+    <item
+        android:id="@+id/bottom_menu_pet"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_tree_24"
+        android:title="@string/petsi"
+
+        />
+</menu>
